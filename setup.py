@@ -5,7 +5,7 @@ requires = [
     "flake8 > 3.0.0",
 ]
 
-flake8_entry_point = # ...
+flake8_entry_point = "flake8.extension"
 
 setuptools.setup(
     name="flakehate",
@@ -19,7 +19,7 @@ setuptools.setup(
     install_requires=requires,
     entry_points={
         flake8_entry_point: [
-            'X666 = flakehate:PluginOne',
+            'X666 = flakehate.one:PluginOne',
         ],
     },
     classifiers=[
