@@ -20,6 +20,8 @@ setuptools.setup(
     entry_points={
         flake8_entry_point: [
             'X666 = flakehate.one:PluginOne',
+            # 'X667 = flakehate.two:PluginTwo',
+            # 'X668 = flakehate.three:PluginThree',
         ],
     },
     classifiers=[
